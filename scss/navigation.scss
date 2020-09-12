@@ -1,0 +1,25 @@
+.nav-main {
+    position: absolute;
+    background-color: $main-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &_list {
+      width: 25%;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline-start: 0;
+    }
+  }
+
+  .nav-portfolio {
+      position: relative;
+      background-color: none;
+
+      .nav-main_list {
+          width: 40%;
+      }
+  }

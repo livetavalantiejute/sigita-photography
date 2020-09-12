@@ -1,0 +1,27 @@
+@import "../scss/variables.scss";
+@import "../scss/typography.scss";
+@import "../scss/header.scss";
+@import "../scss/main.scss";
+@import "../scss/about.scss";
+@import "../scss/navigation.scss";
+@import "../scss/grid.scss";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $main-color;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}

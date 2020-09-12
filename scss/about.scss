@@ -1,0 +1,29 @@
+.about {
+  background-color: $secondary-color;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  margin-left: -$margin-desktop-lr;
+  margin-bottom: $margin-desktop-tb;
+  margin-top: $margin-desktop-tb;
+  justify-content: space-between;
+
+  .about-description {
+    margin: 0 $margin-desktop-lr;
+
+    .heading {
+      color: $main-color;
+    }
+
+    .description {
+      color: $desc-color;
+    }
+  }
+
+  .photo {
+      right: $margin-desktop-lr;
+      bottom: 0;
+      width: 250px;
+      position: absolute;
+  }
+}
