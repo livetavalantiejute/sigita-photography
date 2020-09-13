@@ -7,30 +7,25 @@ var msnry = new Masonry(elem, {
   horizontalOrder: false,
 });
 
-var people = document.querySelectorAll(".people");
-var food = document.querySelectorAll(".food");
-var animals = document.querySelectorAll(".animals");
-var places = document.querySelectorAll(".places");
-var divsToHide = document.querySelectorAll(".grid-item");
-
-for (var i = 0; i < divsToHide.length; i++) {
-divsToHide[i].style.display = "inline";
-}
+var people = "people";
+var food = "food";
+var animals = "animals";
+var places = "places";
 
 function hide(el) {
+  var divsToHide = document.querySelectorAll(".grid-item:not(." + el + ")");
+
   for (var i = 0; i < divsToHide.length; i++) {
     divsToHide[i].style.display = "none";
+    // msnry.remove(divsToHide[i]);
+    msnry.layout();
   }
 
-  for (var i = 0; i < el.length; i++) {
-    el[i].style.display = "inline";
-  }
+  var divsToShow = document.querySelectorAll("." + el);
 
-  var msnry2 = new Masonry( elem, {
-    itemSelector: ".grid-item",
-  columnWidth: 300,
-  gutter: 20,
-  fitWidth: true,
-  horizontalOrder: false,
-  });
+  for (var i = 0; i < divsToShow.length; i++) {
+    divsToShow[i].style.display = "inline";
+    // msnry.appended(divsToShow[i]);
+    msnry.layout();
+  }
 }

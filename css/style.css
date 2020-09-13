@@ -143,6 +143,10 @@ p {
   width: 100%;
 }
 
+.hide {
+  display: none;
+}
+
 html,
 body {
   padding: 0;
