@@ -1,5 +1,5 @@
-var elem = document.querySelector(".grid");
-var msnry = new Masonry(elem, {
+var grid = document.querySelector(".grid");
+var msnry = new Masonry(grid, {
   itemSelector: ".grid-item",
   columnWidth: 300,
   gutter: 20,
@@ -29,3 +29,8 @@ function hide(el) {
     msnry.layout();
   }
 }
+
+imagesLoaded( grid ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
