@@ -1,6 +1,6 @@
 .nav-text {
   font-family: "Kumb Sans", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: white;
   font-weight: 400;
 }
@@ -47,8 +47,8 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 1;
-  -webkit-filter: drop-shadow(3px 3px 7px #151517);
-          filter: drop-shadow(3px 3px 7px #151517);
+  -webkit-filter: drop-shadow(3px 3px 3px #151517);
+          filter: drop-shadow(3px 3px 3px #151517);
 }
 
 .main {
@@ -131,12 +131,12 @@ p {
 }
 
 .grid-item {
-  width: 300px;
+  width: 400px;
   margin-bottom: 10px;
 }
 
 .grid-item--width2 {
-  width: 620px;
+  width: 820px;
 }
 
 .grid-item img {
@@ -147,6 +147,39 @@ p {
   display: none;
 }
 
+.footer {
+  background-color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 40px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .heading {
+  color: #151517;
+}
+
+.footer .socials a {
+  margin-right: 2em;
+}
+
+.footer .socials a img {
+  height: 50px;
+  width: auto;
+}
+
+.footer .socials a:last-child {
+  margin-right: 0;
+}
+
 html,
 body {
   padding: 0;
@@ -155,6 +188,23 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 a {

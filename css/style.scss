@@ -5,6 +5,7 @@
 @import "../scss/about.scss";
 @import "../scss/navigation.scss";
 @import "../scss/grid.scss";
+@import "../scss/footer.scss";
 
 html,
 body {
@@ -14,6 +15,16 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
 }
 
 a {

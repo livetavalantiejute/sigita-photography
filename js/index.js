@@ -1,7 +1,7 @@
 var grid = document.querySelector(".grid");
 var msnry = new Masonry(grid, {
   itemSelector: ".grid-item",
-  columnWidth: 300,
+  columnWidth: 400,
   gutter: 20,
   fitWidth: true,
   horizontalOrder: false,
