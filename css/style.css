@@ -117,6 +117,12 @@ p {
           padding-inline-start: 0;
 }
 
+@media (max-width: 850px) {
+  .nav-main_list {
+    width: 40%;
+  }
+}
+
 .nav-portfolio {
   position: relative;
   background-color: none;
@@ -161,6 +167,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer .heading {

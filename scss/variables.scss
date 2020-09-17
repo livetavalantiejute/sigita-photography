@@ -5,3 +5,15 @@ $desc-color: #555555;
 
 $margin-desktop-lr: 80px;
 $margin-desktop-tb: 40px;
+
+$bp-tablet: 850px;
+$bp-phone: 600px;
+
+@mixin breakpoint($point) {
+    @if $point == tablet {
+      @media (max-width: $bp-tablet) { @content ; }
+   }
+    @else if $point == phone {
+      @media (min-width: $bp-phone) { @content ; }
+   }
+}
