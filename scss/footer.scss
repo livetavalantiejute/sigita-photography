@@ -5,13 +5,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   .heading {
     color: $main-color;
   }
 
   .socials {
-
     a {
       margin-right: 2em;
 
