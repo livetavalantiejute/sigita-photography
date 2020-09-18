@@ -4,14 +4,36 @@
     &-item {
         width: 400px;
         margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
 
         &--width2 {
             width: 820px;
+
+            @include breakpoint(lg) {
+                width: 400px;
+            }
         }
 
         img {
             width: 100%;
         }
+
+        @include breakpoint(phone) {
+            width: 300px;
+        }
+
+        @include breakpoint(sm) {
+            width: 200px;
+        }
+    }
+
+    @include breakpoint(phone) {
+        width: 300px !important;
+    }
+
+    @include breakpoint(sm) {
+        width: 200px !important;
     }
 }
 

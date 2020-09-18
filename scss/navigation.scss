@@ -1,29 +1,53 @@
 .nav-main {
-    position: absolute;
-    background-color: $main-color;
-    width: 100%;
+  position: absolute;
+  background-color: $main-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &_list {
+    width: 25%;
     display: flex;
-    justify-content: center;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
 
-    &_list {
-      width: 25%;
-      display: flex;
-      list-style: none;
-      justify-content: space-between;
-      align-items: center;
-      padding-inline-start: 0;
-
-      @include breakpoint(tablet) {
+    @include breakpoint(tablet) {
       width: 40%;
+    }
+
+    @include breakpoint(phone) {
+      width: 60%;
+    }
+
+    @include breakpoint(sm) {
+      width: 80%;
+    }
+  }
+}
+
+.nav-portfolio {
+  position: relative;
+  background-color: none;
+
+  .nav-main_list {
+    width: 40%;
+
+    @include breakpoint(tablet) {
+      width: 80%;
+    }
+
+    @include breakpoint(phone) {
+      width: 95%;
+    }
+
+    @include breakpoint(sm) {
+      flex-direction: column;
+      
+      .btn-filter {
+        margin: 4px 0;
       }
     }
   }
-
-  .nav-portfolio {
-      position: relative;
-      background-color: none;
-
-      .nav-main_list {
-          width: 40%;
-      }
-  }
+}

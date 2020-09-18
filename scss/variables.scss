@@ -2,18 +2,32 @@ $main-color: #151517;
 $secondary-color: #fff;
 $desc-color: #555555;
 
-
 $margin-desktop-lr: 80px;
 $margin-desktop-tb: 40px;
+$margin-phone-lr: 40px;
+$margin-sm-lr: 20px;
 
+$bp-lg: 980px;
 $bp-tablet: 850px;
 $bp-phone: 600px;
+$bp-sm: 400px;
 
 @mixin breakpoint($point) {
-    @if $point == tablet {
-      @media (max-width: $bp-tablet) { @content ; }
-   }
-    @else if $point == phone {
-      @media (min-width: $bp-phone) { @content ; }
-   }
+  @if $point == lg {
+    @media (max-width: $bp-lg) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: $bp-tablet) {
+      @content;
+    }
+  } @else if $point == phone {
+    @media (max-width: $bp-phone) {
+      @content;
+    }
+  } @else if $point == sm {
+    @media (max-width: $bp-sm) {
+      @content;
+    }
+  }
 }

@@ -1,3 +1,7 @@
 .main {
     padding: $margin-desktop-tb $margin-desktop-lr;
+    
+    @include breakpoint(phone) {
+        padding: 20px $margin-phone-lr;
+    }
 }

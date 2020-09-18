@@ -8,6 +8,10 @@
   margin-top: $margin-desktop-tb;
   justify-content: space-between;
 
+  @include breakpoint(phone) {
+    margin-left: -$margin-phone-lr;
+  }
+
   .about-description {
     margin: 0 $margin-desktop-lr;
 
@@ -25,5 +29,17 @@
       bottom: 0;
       width: 250px;
       position: absolute;
+  }
+
+  @include breakpoint(tablet) {
+    display: flex;
+    flex-direction: column;
+
+    .photo {
+      position: relative;
+      right: 0;
+      margin-left: 0;
+      align-self: center;
+    }
   }
 }
