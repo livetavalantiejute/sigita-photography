@@ -4,7 +4,7 @@ var msnry = new Masonry(grid, {
   columnWidth: 400,
   gutter: 20,
   fitWidth: true,
-  horizontalOrder: false,
+  horizontalOrder: true,
 });
 
 var people = "people";
