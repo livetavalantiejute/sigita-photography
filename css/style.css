@@ -169,8 +169,11 @@ p {
 }
 
 .nav-portfolio {
-  position: relative;
-  background-color: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #151517;
+  z-index: 100;
 }
 
 .nav-portfolio .nav-main_list {

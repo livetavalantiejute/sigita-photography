@@ -28,8 +28,10 @@
 }
 
 .nav-portfolio {
-  position: relative;
-  background-color: none;
+  position: sticky;
+  top: 0;
+  background-color: $main-color;
+  z-index: 100;
 
   .nav-main_list {
     width: 40%;
