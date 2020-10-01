@@ -4,6 +4,8 @@
     &-item {
         width: 400px;
         margin-bottom: 10px;
+        height: auto;
+        max-height: 100%;
         display: flex;
         justify-content: center;
 
